@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.14.2",
+    "1up-learn": "file:..",
     "axios": "^1.6.2",
     "framer-motion": "^10.16.16",
     "i18next": "^23.7.6",
