@@ -119,15 +119,15 @@ Visit: `http://localhost:5173`
         │   ├── Profile.jsx
         │   ├── Leaderboard.jsx
         │   └── AuthCallback.jsx
-        └── components/
-            ├── Navbar.jsx
-            ├── GameCard.jsx
-            ├── XPBar.jsx
-            ├── BadgeDisplay.jsx
-            ├── FeedbackForm.jsx
-            ├── WordleModal.jsx
-            ├── FloatingNotification.jsx
-            └── EasterEggLayer.jsx
+        ├── components/
+        │   ├── Navbar.jsx
+        │   ├── GameCard.jsx
+        │   ├── XPBar.jsx
+        │   ├── BadgeDisplay.jsx
+        │   ├── FeedbackForm.jsx
+        │   ├── WordleModal.jsx
+        │   ├── FloatingNotification.jsx
+        │   └── EasterEggLayer.jsx
 
 ```
 
@@ -200,3 +200,34 @@ Visit: `http://localhost:5173`
 | GET    | `/api/progress/children`       | Parent's children      |
 | GET    | `/api/wordle/today`            | Get today's word info  |
 | POST   | `/api/wordle/guess`            | Submit a Wordle guess  |
+
+---
+
+## 🌐 Deployment Guide
+
+### Frontend — Vercel
+1.  **Connect Repo**: Point Vercel to your GitHub repo.
+2.  **Root Directory**: Set to `frontend`.
+3.  **Build Settings**:
+    - Build Command: `npm run build`
+    - Output Directory: `dist`
+4.  **Environment Variables**:
+    - `VITE_API_BASE_URL`: Your backend URL (e.g., `https://back-1up.onrender.com`)
+
+### Backend — Render
+1.  **New Web Service**: Connect to your GitHub repo.
+2.  **Root Directory**: Set to `backend`.
+3.  **Build Command**: `npm install`
+4.  **Start Command**: `npm start`
+5.  **Environment Variables**:
+    - `MONGODB_URI`: Your MongoDB Atlas connection string.
+    - `JWT_SECRET`: A secure random string.
+    - `CLIENT_URL`: Your Vercel frontend URL (e.g., `https://1up-learn.vercel.app`).
+    - `DEEPSEEK_API_KEY`: Your DeepSeek API key.
+    - `DEEPSEEK_MODEL`: `deepseek-chat`.
+    - `PORT`: `5000` (Render will override if needed).
+
+### Database — MongoDB Atlas
+1.  Create a **Shared Cluster** (Free).
+2.  Go to **Network Access** → Add IP Address → **0.0.0.0/0** (Allow access from anywhere, required for Render/Vercel).
+3.  Create a user and copy the connection string.
