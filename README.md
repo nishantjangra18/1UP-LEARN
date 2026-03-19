@@ -79,6 +79,45 @@ Visit: `http://localhost:5173`
 
 ---
 
+## ▲ Deploy on Vercel (single project)
+
+This repository is configured so frontend and backend can deploy in one Vercel project.
+
+### 1) Push to GitHub
+
+Push this repo with the root `vercel.json` and `api/[...all].js` files.
+
+### 2) Import project in Vercel
+
+- Create **one** Vercel project from this repository
+- Keep Root Directory as repository root
+
+The repo already defines:
+
+- Install command: `npm run install:all`
+- Build command: `npm run build --prefix frontend`
+- Output directory: `frontend/dist`
+
+### 3) Configure environment variables (Vercel Project Settings)
+
+Set these variables in Vercel:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_super_secret_jwt_key
+CLIENT_URL=https://your-project-name.vercel.app
+DEEPSEEK_API_KEY=your_deepseek_api_key
+DEEPSEEK_MODEL=deepseek-chat
+```
+
+### 4) Redeploy and verify
+
+- Open `https://your-project-name.vercel.app`
+- Check backend health at `https://your-project-name.vercel.app/api/health`
+- Test login/register and quiz endpoints from the UI
+
+---
+
 ## 🏗️ Project Structure
 
 ```
@@ -206,6 +245,7 @@ Visit: `http://localhost:5173`
 ## 🌐 Deployment Guide
 
 ### Frontend — Vercel
+
 1.  **Connect Repo**: Point Vercel to your GitHub repo.
 2.  **Root Directory**: Set to `frontend`.
 3.  **Build Settings**:
@@ -215,6 +255,7 @@ Visit: `http://localhost:5173`
     - `VITE_API_BASE_URL`: Your backend URL (e.g., `https://back-1up.onrender.com`)
 
 ### Backend — Render
+
 1.  **New Web Service**: Connect to your GitHub repo.
 2.  **Root Directory**: Set to `backend`.
 3.  **Build Command**: `npm install`
@@ -228,6 +269,7 @@ Visit: `http://localhost:5173`
     - `PORT`: `5000` (Render will override if needed).
 
 ### Database — MongoDB Atlas
+
 1.  Create a **Shared Cluster** (Free).
 2.  Go to **Network Access** → Add IP Address → **0.0.0.0/0** (Allow access from anywhere, required for Render/Vercel).
 3.  Create a user and copy the connection string.
