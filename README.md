@@ -93,6 +93,7 @@ Push this repo with the root `vercel.json` and `api/[...all].js` files.
 - Keep Root Directory as repository root
 
 The repo already defines:
+
 - Install command: `npm run install:all`
 - Build command: `npm run build --prefix frontend`
 - Output directory: `frontend/dist`
@@ -244,6 +245,7 @@ DEEPSEEK_MODEL=deepseek-chat
 ## 🌐 Deployment Guide
 
 ### Frontend — Vercel
+
 1.  **Connect Repo**: Point Vercel to your GitHub repo.
 2.  **Root Directory**: Set to `frontend`.
 3.  **Build Settings**:
@@ -253,6 +255,7 @@ DEEPSEEK_MODEL=deepseek-chat
     - `VITE_API_BASE_URL`: Your backend URL (e.g., `https://back-1up.onrender.com`)
 
 ### Backend — Render
+
 1.  **New Web Service**: Connect to your GitHub repo.
 2.  **Root Directory**: Set to `backend`.
 3.  **Build Command**: `npm install`
@@ -266,6 +269,7 @@ DEEPSEEK_MODEL=deepseek-chat
     - `PORT`: `5000` (Render will override if needed).
 
 ### Database — MongoDB Atlas
+
 1.  Create a **Shared Cluster** (Free).
 2.  Go to **Network Access** → Add IP Address → **0.0.0.0/0** (Allow access from anywhere, required for Render/Vercel).
 3.  Create a user and copy the connection string.
