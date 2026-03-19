@@ -1,0 +1,119 @@
+{
+  "app": {
+    "name": "1up लर्न",
+    "tagline": "सीखो। खेलो। लेवल अप करो!",
+    "description": "5-10 साल के बच्चों के लिए मज़ेदार सीखने का मंच"
+  },
+  "nav": {
+    "home": "होम",
+    "games": "खेल",
+    "learn": "सीखो",
+    "profile": "प्रोफ़ाइल",
+    "parent": "पेरेंट डैशबोर्ड",
+    "logout": "लॉगआउट",
+    "login": "लॉगिन"
+  },
+  "landing": {
+    "hero_title": "खेलते-खेलते सीखो!",
+    "hero_subtitle": "रोमांचक खेलों से विज्ञान, गणित और बहुत कुछ सीखो!",
+    "cta_start": "शुरू करो",
+    "cta_learn": "कैसे काम करता है",
+    "today_word": "आज का शब्द",
+    "today_game": "आज का खेल",
+    "features_title": "1up लर्न क्यों?",
+    "feature_games": "मज़ेदार मिनी-गेम्स",
+    "feature_games_desc": "सभी विषयों में 10+ रोमांचक खेल",
+    "feature_badges": "बैज कमाओ",
+    "feature_badges_desc": "बैज इकट्ठा करो और अपनी उपलब्धियाँ दिखाओ",
+    "feature_paths": "लर्निंग पाथ",
+    "feature_paths_desc": "विज्ञान, गणित, अंग्रेज़ी में गाइडेड ट्रैक",
+    "feature_parents": "पेरेंट इनसाइट",
+    "feature_parents_desc": "माता-पिता हर कदम की प्रगति देख सकते हैं"
+  },
+  "games": {
+    "title": "गेम ज़ोन",
+    "subtitle": "एक खेल चुनो और XP कमाना शुरू करो!",
+    "play": "अभी खेलो",
+    "locked": "लॉक्ड",
+    "unlock_with": "{{coins}} सिक्कों से अनलॉक करो",
+    "score": "स्कोर",
+    "best": "सर्वश्रेष्ठ",
+    "lives": "जीवन",
+    "game_over": "गेम ओवर!",
+    "you_win": "तुम जीते!",
+    "try_again": "फिर कोशिश करो",
+    "restore_life": "एक जीवन वापस पाओ",
+    "restore_question": "एक जीवन वापस पाने के लिए यह प्रश्न उत्तर दो:",
+    "next_level": "अगला स्तर",
+    "home": "होम जाओ"
+  },
+  "gamification": {
+    "xp": "XP",
+    "level": "लेवल",
+    "coins": "सिक्के",
+    "badges": "बैज",
+    "streak": "स्ट्रीक",
+    "rank": "रैंक",
+    "leaderboard": "लीडरबोर्ड",
+    "earned_xp": "+{{amount}} XP",
+    "earned_coins": "+{{amount}} सिक्के",
+    "level_up": "लेवल अप! आप लेवल {{level}} पर पहुँचे!",
+    "new_badge": "नया बैज: {{name}}"
+  },
+  "learn": {
+    "paths_title": "लर्निंग पाथ",
+    "paths_subtitle": "अपना रास्ता चुनो और सीखना शुरू करो!",
+    "science": "विज्ञान",
+    "math": "गणित",
+    "history": "इतिहास",
+    "current_events": "वर्तमान घटनाएँ",
+    "english": "अंग्रेज़ी",
+    "creative": "क्रिएटिव आर्ट्स",
+    "levels": "{{done}} / {{total}} लेवल",
+    "start": "शुरू करो",
+    "continue": "जारी रखो",
+    "completed": "पूरा हो गया!"
+  },
+  "wordle": {
+    "title": "आज का शब्द",
+    "hint": "संकेत",
+    "guess_placeholder": "अपना अनुमान टाइप करो...",
+    "submit": "अनुमान लगाओ",
+    "congrats": "शानदार! तुमने पा लिया!",
+    "give_up": "शब्द देखो",
+    "definition": "परिभाषा",
+    "related_track": "संबंधित विषय",
+    "explore": "यह विषय एक्सप्लोर करो"
+  },
+  "feedback": {
+    "title": "यह खेल कैसा था?",
+    "rating": "रेटिंग",
+    "comment": "और बताओ (वैकल्पिक)",
+    "submit": "फीडबैक दो",
+    "thanks": "फीडबैक के लिए धन्यवाद!"
+  },
+  "parent": {
+    "dashboard": "पेरेंट डैशबोर्ड",
+    "children": "तुम्हारे बच्चे",
+    "add_child": "बच्चा जोड़ो",
+    "link_code": "लिंक कोड",
+    "copy_code": "कोड कॉपी करो",
+    "progress_chart": "प्रगति चार्ट",
+    "recent_games": "हाल के खेल",
+    "achievements": "उपलब्धियाँ",
+    "time_played": "खेलने का समय",
+    "no_children": "अभी तक कोई बच्चा नहीं जोड़ा। अपना लिंक कोड बच्चे के साथ शेयर करो!"
+  },
+  "easter": {
+    "found": "तुमने एक छुपा खज़ाना ढूंढा!",
+    "reward": "+{{coins}} सिक्के और +{{xp}} XP!"
+  },
+  "common": {
+    "loading": "लोड हो रहा है...",
+    "error": "कुछ गलत हुआ",
+    "back": "वापस",
+    "close": "बंद करो",
+    "save": "सेव करो",
+    "cancel": "रद्द करो"
+  }
+}

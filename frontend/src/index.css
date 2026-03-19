@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Global reset ─────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  /* Remove blinking text cursor on non-input elements */
+  cursor: default;
+}
+
+/* Only allow text cursor inside actual text inputs */
+input, textarea, [contenteditable] {
+  cursor: text;
+}
+
+/* Pointer cursor on interactive elements */
+button, a, [role="button"], label[for], select {
+  cursor: pointer;
+}
+
+/* Disabled elements */
+button:disabled, [disabled] {
+  cursor: not-allowed;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #0f172a;
+  color: #f1f5f9;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  /* Prevent unwanted text selection highlights */
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, .font-game {
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 0.02em;
+}
+
+/* ── Star field background ───────────────────────────────── */
+.star-bg {
+  background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  background-color: #0f172a;
+  opacity: 0.12;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ── Card gradients ──────────────────────────────────────── */
+.card-gradient-purple  { background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%); }
+.card-gradient-orange  { background: linear-gradient(135deg, #f97316 0%, #ef4444 100%); }
+.card-gradient-green   { background: linear-gradient(135deg, #22c55e 0%, #14b8a6 100%); }
+.card-gradient-pink    { background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%); }
+.card-gradient-blue    { background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%); }
+.card-gradient-yellow  { background: linear-gradient(135deg, #eab308 0%, #f97316 100%); }
+
+/* ── Scrollbar ───────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: #1e293b; }
+::-webkit-scrollbar-thumb { background: #7c3aed; border-radius: 3px; }
+
+/* ── XP fill animation ───────────────────────────────────── */
+@keyframes xp-fill { from { width: 0; } }
+
+/* ── Coin bounce ─────────────────────────────────────────── */
+@keyframes coin-bounce {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%       { transform: translateY(-15px) rotate(180deg); }
+}
+.coin-animate { animation: coin-bounce 0.6s ease-in-out; }
+
+/* ── Learning path node ──────────────────────────────────── */
+.path-node {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+.path-node:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.6);
+}
+
+/* ── Easter egg pulse ────────────────────────────────────── */
+@keyframes egg-pulse {
+  0%, 100% { opacity: 0.25; transform: scale(1); }
+  50%       { opacity: 0.65; transform: scale(1.1); }
+}
+.easter-egg {
+  animation: egg-pulse 2s ease-in-out infinite;
+  cursor: pointer;
+}
+
+/* ── Float animation ─────────────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+.animate-float { animation: float 3s ease-in-out infinite; }
+
+/* ── Wiggle ──────────────────────────────────────────────── */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-4deg); }
+  50%       { transform: rotate(4deg); }
+}
+.animate-wiggle { animation: wiggle 0.4s ease-in-out; }
+
+/* ── Game canvas ─────────────────────────────────────────── */
+.game-canvas-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+canvas { display: block; cursor: default; }
+
+/* ── MCQ option hover ────────────────────────────────────── */
+.mcq-option {
+  transition: transform 0.15s, background 0.15s;
+}
+.mcq-option:hover:not(:disabled) {
+  transform: translateX(4px);
+}
+
+/* ── Revive countdown ring ───────────────────────────────── */
+@keyframes countdown-ring {
+  from { stroke-dashoffset: 0; }
+  to   { stroke-dashoffset: 188; }
+}
+.countdown-ring {
+  animation: countdown-ring 1.5s linear forwards;
+  stroke-dasharray: 188;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  transform: rotate(-90deg);
+}

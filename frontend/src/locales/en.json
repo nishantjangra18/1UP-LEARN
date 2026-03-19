@@ -1,0 +1,119 @@
+{
+  "app": {
+    "name": "1up Learn",
+    "tagline": "Learn. Play. Level Up!",
+    "description": "A gamified education platform for kids aged 5–10"
+  },
+  "nav": {
+    "home": "Home",
+    "games": "Games",
+    "learn": "Learn",
+    "profile": "Profile",
+    "parent": "Parent Dashboard",
+    "logout": "Logout",
+    "login": "Login"
+  },
+  "landing": {
+    "hero_title": "Learn While You Play!",
+    "hero_subtitle": "Explore science, math, and more through exciting games!",
+    "cta_start": "Start Adventure",
+    "cta_learn": "How It Works",
+    "today_word": "Today's Word",
+    "today_game": "Today's Game",
+    "features_title": "Why 1up Learn?",
+    "feature_games": "Fun Mini-Games",
+    "feature_games_desc": "10+ exciting games across all subjects",
+    "feature_badges": "Earn Badges",
+    "feature_badges_desc": "Collect badges and show off your achievements",
+    "feature_paths": "Learning Paths",
+    "feature_paths_desc": "Guided tracks in Science, Math, English & more",
+    "feature_parents": "Parent Insights",
+    "feature_parents_desc": "Parents can track every step of progress"
+  },
+  "games": {
+    "title": "Game Zone",
+    "subtitle": "Pick a game and start earning XP!",
+    "play": "Play Now",
+    "locked": "Locked",
+    "unlock_with": "Unlock with {{coins}} coins",
+    "score": "Score",
+    "best": "Best",
+    "lives": "Lives",
+    "game_over": "Game Over!",
+    "you_win": "You Win!",
+    "try_again": "Try Again",
+    "restore_life": "Restore a Life",
+    "restore_question": "Answer this question to restore a life:",
+    "next_level": "Next Level",
+    "home": "Go Home"
+  },
+  "gamification": {
+    "xp": "XP",
+    "level": "Level",
+    "coins": "Coins",
+    "badges": "Badges",
+    "streak": "Streak",
+    "rank": "Rank",
+    "leaderboard": "Leaderboard",
+    "earned_xp": "+{{amount}} XP",
+    "earned_coins": "+{{amount}} Coins",
+    "level_up": "LEVEL UP! You reached Level {{level}}!",
+    "new_badge": "New Badge: {{name}}"
+  },
+  "learn": {
+    "paths_title": "Learning Paths",
+    "paths_subtitle": "Choose your adventure and start learning!",
+    "science": "Science",
+    "math": "Math",
+    "history": "History",
+    "current_events": "Current Events",
+    "english": "English",
+    "creative": "Creative Arts",
+    "levels": "{{done}} / {{total}} Levels",
+    "start": "Start",
+    "continue": "Continue",
+    "completed": "Completed!"
+  },
+  "wordle": {
+    "title": "Today's Word",
+    "hint": "Hint",
+    "guess_placeholder": "Type your guess...",
+    "submit": "Guess",
+    "congrats": "Amazing! You got it!",
+    "give_up": "Reveal Word",
+    "definition": "Definition",
+    "related_track": "Related Topic",
+    "explore": "Explore This Topic"
+  },
+  "feedback": {
+    "title": "How was this game?",
+    "rating": "Rating",
+    "comment": "Tell us more (optional)",
+    "submit": "Submit Feedback",
+    "thanks": "Thanks for the feedback!"
+  },
+  "parent": {
+    "dashboard": "Parent Dashboard",
+    "children": "Your Children",
+    "add_child": "Add Child",
+    "link_code": "Link Code",
+    "copy_code": "Copy Code",
+    "progress_chart": "Progress Chart",
+    "recent_games": "Recent Games",
+    "achievements": "Achievements",
+    "time_played": "Time Played",
+    "no_children": "No children linked yet. Share your link code with your child!"
+  },
+  "easter": {
+    "found": "You found a hidden treasure!",
+    "reward": "+{{coins}} coins and +{{xp}} XP!"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "back": "Back",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel"
+  }
+}
