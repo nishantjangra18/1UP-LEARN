@@ -11,6 +11,21 @@ A full-stack gamified education platform for children aged 5–10 with parent mo
 - MongoDB (local or Atlas)
 - Google OAuth credentials
 
+### Root Commands (recommended)
+
+From the project root:
+
+```bash
+npm run install:all
+npm run dev
+```
+
+For production build from root:
+
+```bash
+npm run build
+```
+
 ### 1. Clone & Install
 
 ```bash
