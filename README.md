@@ -1,4 +1,4 @@
-# 🎮 1up Learn — Gamified Education Platform
+# 🎮 1up Learn - Gamified Education Platform
 
 A full-stack gamified education platform for children aged 5–10 with parent monitoring.
 
@@ -48,11 +48,11 @@ SESSION_SECRET=your_session_secret
 ### 4. Run
 
 ```bash
-# Terminal 1 — Backend
+# Terminal 1 - Backend
 cd backend
 npm run dev
 
-# Terminal 2 — Frontend
+# Terminal 2 - Frontend
 cd frontend
 npm run dev
 ```
@@ -101,18 +101,16 @@ Visit: `http://localhost:5173`
         │   ├── Profile.jsx
         │   ├── Leaderboard.jsx
         │   └── AuthCallback.jsx
-        ├── components/
-        │   ├── Navbar.jsx
-        │   ├── GameCard.jsx
-        │   ├── XPBar.jsx
-        │   ├── BadgeDisplay.jsx
-        │   ├── FeedbackForm.jsx
-        │   ├── WordleModal.jsx
-        │   ├── FloatingNotification.jsx
-        │   └── EasterEggLayer.jsx
-        └── locales/
-            ├── en.json          # English
-            └── hi.json          # Hindi
+        └── components/
+            ├── Navbar.jsx
+            ├── GameCard.jsx
+            ├── XPBar.jsx
+            ├── BadgeDisplay.jsx
+            ├── FeedbackForm.jsx
+            ├── WordleModal.jsx
+            ├── FloatingNotification.jsx
+            └── EasterEggLayer.jsx
+         
 ```
 
 ---
