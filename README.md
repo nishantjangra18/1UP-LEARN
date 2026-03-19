@@ -121,18 +121,15 @@ Visit: `http://localhost:5173`
 
 | Feature | Status |
 |---------|--------|
-| Google OAuth Login | ✅ |
 | Parent / Child Roles | ✅ |
 | XP, Levels, Coins, Badges | ✅ |
 | 8 Playable Games | ✅ |
 | Wordle Daily Word | ✅ |
 | Learning Paths (6 tracks) | ✅ |
 | Parent Dashboard + Charts | ✅ |
-| Restore Life via MCQ | ✅ |
 | Easter Eggs | ✅ |
 | Feedback System | ✅ |
 | Leaderboard | ✅ |
-| Multi-language (EN/HI) | ✅ |
 | Responsive Design | ✅ |
 | Framer Motion Animations | ✅ |
 
