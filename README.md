@@ -79,6 +79,44 @@ Visit: `http://localhost:5173`
 
 ---
 
+## ▲ Deploy on Vercel (single project)
+
+This repository is configured so frontend and backend can deploy in one Vercel project.
+
+### 1) Push to GitHub
+
+Push this repo with the root `vercel.json` and `api/[...all].js` files.
+
+### 2) Import project in Vercel
+
+- Create **one** Vercel project from this repository
+- Keep Root Directory as repository root
+
+The repo already defines:
+- Install command: `npm run install:all`
+- Build command: `npm run build --prefix frontend`
+- Output directory: `frontend/dist`
+
+### 3) Configure environment variables (Vercel Project Settings)
+
+Set these variables in Vercel:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_super_secret_jwt_key
+CLIENT_URL=https://your-project-name.vercel.app
+DEEPSEEK_API_KEY=your_deepseek_api_key
+DEEPSEEK_MODEL=deepseek-chat
+```
+
+### 4) Redeploy and verify
+
+- Open `https://your-project-name.vercel.app`
+- Check backend health at `https://your-project-name.vercel.app/api/health`
+- Test login/register and quiz endpoints from the UI
+
+---
+
 ## 🏗️ Project Structure
 
 ```
