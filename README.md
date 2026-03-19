@@ -7,9 +7,25 @@ A full-stack gamified education platform for children aged 5–10 with parent mo
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Node.js v18+
 - MongoDB (local or Atlas)
 - Google OAuth credentials
+
+### Root Commands (recommended)
+
+From the project root:
+
+```bash
+npm run install:all
+npm run dev
+```
+
+For production build from root:
+
+```bash
+npm run build
+```
 
 ### 1. Clone & Install
 
@@ -28,6 +44,7 @@ npm install
 ### 2. Configure Environment
 
 Edit `backend/.env`:
+
 ```env
 PORT=5000
 MONGODB_URI=mongodb://localhost:27017/1up-learn
@@ -39,6 +56,7 @@ SESSION_SECRET=your_session_secret
 ```
 
 ### 3. Google OAuth Setup
+
 1. Go to [Google Cloud Console](https://console.cloud.google.com)
 2. Create a project → Enable Google+ API
 3. Create OAuth 2.0 credentials
@@ -110,47 +128,48 @@ Visit: `http://localhost:5173`
             ├── WordleModal.jsx
             ├── FloatingNotification.jsx
             └── EasterEggLayer.jsx
-         
+
 ```
 
 ---
 
 ## ✨ Features
 
-| Feature | Status |
-|---------|--------|
-| Parent / Child Roles | ✅ |
-| XP, Levels, Coins, Badges | ✅ |
-| 8 Playable Games | ✅ |
-| Wordle Daily Word | ✅ |
-| Learning Paths (6 tracks) | ✅ |
-| Parent Dashboard + Charts | ✅ |
-| Easter Eggs | ✅ |
-| Feedback System | ✅ |
-| Leaderboard | ✅ |
-| Responsive Design | ✅ |
-| Framer Motion Animations | ✅ |
+| Feature                   | Status |
+| ------------------------- | ------ |
+| Parent / Child Roles      | ✅     |
+| XP, Levels, Coins, Badges | ✅     |
+| 8 Playable Games          | ✅     |
+| Wordle Daily Word         | ✅     |
+| Learning Paths (6 tracks) | ✅     |
+| Parent Dashboard + Charts | ✅     |
+| Easter Eggs               | ✅     |
+| Feedback System           | ✅     |
+| Leaderboard               | ✅     |
+| Responsive Design         | ✅     |
+| Framer Motion Animations  | ✅     |
 
 ---
 
 ## 🎮 Games
 
-| Game | Type | Subject |
-|------|------|---------|
-| Memory Match | Card flipping | Brain |
-| Whack-a-Mole | Reflex | Reflex |
-| Connect 4 | Strategy (vs AI) | Strategy |
-| Jeopardy Quiz | Trivia | All subjects |
-| Snake & Ladders | Dice / Board | Math |
-| Flappy Bird | Endless runner | Reflex |
-| Math Blast | Timed arithmetic | Math |
-| Word Builder | Unscramble | English |
+| Game            | Type             | Subject      |
+| --------------- | ---------------- | ------------ |
+| Memory Match    | Card flipping    | Brain        |
+| Whack-a-Mole    | Reflex           | Reflex       |
+| Connect 4       | Strategy (vs AI) | Strategy     |
+| Jeopardy Quiz   | Trivia           | All subjects |
+| Snake & Ladders | Dice / Board     | Math         |
+| Flappy Bird     | Endless runner   | Reflex       |
+| Math Blast      | Timed arithmetic | Math         |
+| Word Builder    | Unscramble       | English      |
 
 ---
 
 ## 📊 MongoDB Schema
 
 **User:**
+
 - `googleId`, `name`, `email`, `role` (parent/child)
 - `xp`, `level`, `coins`
 - `badges[]` — earned achievements
@@ -160,23 +179,24 @@ Visit: `http://localhost:5173`
 - `wordleStreak`, `easterEggsFound[]`
 
 **DailyWord:**
+
 - `date`, `word`, `definition`, `hint`, `relatedTrack`
 
 ---
 
 ## 🌐 API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/auth/google` | Start Google OAuth |
-| GET | `/api/auth/google/callback` | OAuth callback |
-| GET | `/api/auth/me` | Get current user |
-| PUT | `/api/auth/set-role` | Set parent/child role |
-| POST | `/api/auth/link-child` | Link child to parent |
-| POST | `/api/progress/game-complete` | Record game completion |
-| POST | `/api/progress/track-progress` | Update track progress |
-| POST | `/api/progress/easter-egg` | Collect easter egg |
-| GET | `/api/progress/leaderboard` | Top 10 by XP |
-| GET | `/api/progress/children` | Parent's children |
-| GET | `/api/wordle/today` | Get today's word info |
-| POST | `/api/wordle/guess` | Submit a Wordle guess |
+| Method | Endpoint                       | Description            |
+| ------ | ------------------------------ | ---------------------- |
+| GET    | `/api/auth/google`             | Start Google OAuth     |
+| GET    | `/api/auth/google/callback`    | OAuth callback         |
+| GET    | `/api/auth/me`                 | Get current user       |
+| PUT    | `/api/auth/set-role`           | Set parent/child role  |
+| POST   | `/api/auth/link-child`         | Link child to parent   |
+| POST   | `/api/progress/game-complete`  | Record game completion |
+| POST   | `/api/progress/track-progress` | Update track progress  |
+| POST   | `/api/progress/easter-egg`     | Collect easter egg     |
+| GET    | `/api/progress/leaderboard`    | Top 10 by XP           |
+| GET    | `/api/progress/children`       | Parent's children      |
+| GET    | `/api/wordle/today`            | Get today's word info  |
+| POST   | `/api/wordle/guess`            | Submit a Wordle guess  |
